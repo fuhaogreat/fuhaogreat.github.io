@@ -1,22 +1,126 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://fuhaogreat.github.io</id>
-    <title>Gridea</title>
-    <updated>2021-04-17T13:43:55.043Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://fuhaogreat.github.io"/>
-    <link rel="self" href="https://fuhaogreat.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
-    <logo>https://fuhaogreat.github.io/images/avatar.png</logo>
-    <icon>https://fuhaogreat.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, Gridea</rights>
-    <entry>
-        <title type="html"><![CDATA[day2]]></title>
-        <id>https://fuhaogreat.github.io/post/day2/</id>
-        <link href="https://fuhaogreat.github.io/post/day2/">
-        </link>
-        <updated>2021-04-17T13:40:38.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="今日目标">今日目标</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>day2 | Gridea</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://fuhaogreat.github.io/favicon.ico?v=1618666974835">
+<link rel="stylesheet" href="https://fuhaogreat.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="今日目标
+
+matplotlib 相关常用技术
+
+在图像中添加辅助信息
+绘制多个图像
+绘制常用的图像
+
+
+numpy 相关常用技术
+
+numpy 数组常用属性
+numpy 基本操作
+
+数组的创建
+numpy 数组索引和切片
+数组的形状修改
+..." />
+    <meta name="keywords" content="人工智能,机器学习" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://fuhaogreat.github.io">
+        <img src="https://fuhaogreat.github.io/images/avatar.png?v=1618666974835" class="site-logo">
+        <h1 class="site-title">Gridea</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+        
+          <a href="https://fuhaogreat.github.io/tag/XaUOnd2EE" class="site-nav">
+            学习笔记
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://fuhaogreat.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">day2</h2>
+            <div class="post-date">2021-04-17</div>
+            
+              <div class="feature-container" style="background-image: url('https://fuhaogreat.github.io/post-images/day2.jpeg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <h1 id="今日目标">今日目标</h1>
 <ol>
 <li>matplotlib 相关常用技术
 <ol>
@@ -538,61 +642,58 @@ array([  1.,  10., 100.])
 <li>逆矩阵</li>
 <li>矩阵计算函数</li>
 </ol>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[这是测试]]></title>
-        <id>https://fuhaogreat.github.io/post/zhe-shi-ce-shi/</id>
-        <link href="https://fuhaogreat.github.io/post/zhe-shi-ce-shi/">
-        </link>
-        <updated>2021-04-17T10:32:49.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="0准备数据">0.准备数据</h1>
-<p>x = range(60)<br>
-y_shanghai = [random.uniform(15, 18) for i in x]<br>
-y_beijing = [random.uniform(1, 5) for i in x]</p>
-<h1 id="1创建画布">1.创建画布</h1>
-<h1 id="pltfigurefigsize20-8-dpi100">plt.figure(figsize=(20, 8), dpi=100)</h1>
-<p>fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(20, 8), dpi=100)</p>
-<h1 id="2绘制图像">2.绘制图像</h1>
-<h1 id="pltplotx-y_shanghai-label上海">plt.plot(x, y_shanghai, label=&quot;上海&quot;)</h1>
-<h1 id="pltplotx-y_beijing-colorr-linestyle-label北京">plt.plot(x, y_beijing, color=&quot;r&quot;, linestyle=&quot;--&quot;, label=&quot;北京&quot;)</h1>
-<p>axes[0].plot(x, y_shanghai, label=&quot;上海&quot;)<br>
-axes[1].plot(x, y_beijing, color=&quot;r&quot;, linestyle=&quot;--&quot;, label=&quot;北京&quot;)</p>
-<h1 id="21-添加xy轴刻度">2.1 添加x,y轴刻度</h1>
-<h1 id="构造xy轴刻度标签">构造x,y轴刻度标签</h1>
-<p>x_ticks_label = [&quot;11点{}分&quot;.format(i) for i in x]<br>
-y_ticks = range(40)</p>
-<h1 id="刻度显示">刻度显示</h1>
-<h1 id="pltxticksx5-x_ticks_label5">plt.xticks(x[::5], x_ticks_label[::5])</h1>
-<h1 id="pltyticksy_ticks5">plt.yticks(y_ticks[::5])</h1>
-<p>axes[0].set_xticks(x[::5])<br>
-axes[0].set_yticks(y_ticks[::5])<br>
-axes[0].set_xticklabels(x_ticks_label[::5])<br>
-axes[1].set_xticks(x[::5])<br>
-axes[1].set_yticks(y_ticks[::5])<br>
-axes[1].set_xticklabels(x_ticks_label[::5])</p>
-<h1 id="22-添加网格显示">2.2 添加网格显示</h1>
-<h1 id="pltgridtrue-linestyle-alpha05">plt.grid(True, linestyle=&quot;--&quot;, alpha=0.5)</h1>
-<p>axes[0].grid(True, linestyle=&quot;--&quot;, alpha=0.5)<br>
-axes[1].grid(True, linestyle=&quot;--&quot;, alpha=0.5)</p>
-<h1 id="23-添加描述信息">2.3 添加描述信息</h1>
-<h1 id="pltxlabel时间">plt.xlabel(&quot;时间&quot;)</h1>
-<h1 id="pltylabel温度">plt.ylabel(&quot;温度&quot;)</h1>
-<h1 id="plttitle中午11点-12点某城市温度变化图-fontsize20">plt.title(&quot;中午11点--12点某城市温度变化图&quot;, fontsize=20)</h1>
-<p>axes[0].set_xlabel(&quot;时间&quot;)<br>
-axes[0].set_ylabel(&quot;温度&quot;)<br>
-axes[0].set_title(&quot;中午11点--12点某城市温度变化图&quot;, fontsize=20)<br>
-axes[1].set_xlabel(&quot;时间&quot;)<br>
-axes[1].set_ylabel(&quot;温度&quot;)<br>
-axes[1].set_title(&quot;中午11点--12点某城市温度变化图&quot;, fontsize=20)</p>
-<h1 id="24-图像保存"># 2.4 图像保存</h1>
-<p>plt.savefig(&quot;./test.png&quot;)</p>
-<h1 id="25-添加图例"># 2.5 添加图例</h1>
-<h1 id="pltlegendloc0">plt.legend(loc=0)</h1>
-<p>axes[0].legend(loc=0)<br>
-axes[1].legend(loc=0)</p>
-<h1 id="3图像显示">3.图像显示</h1>
-<p>plt.show()</p>
-]]></content>
-    </entry>
-</feed>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://fuhaogreat.github.io/tag/L1kYX4Gh3/" class="tag">
+                    人工智能
+                  </a>
+                
+                  <a href="https://fuhaogreat.github.io/tag/Cf3iNKQNV/" class="tag">
+                    机器学习
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://fuhaogreat.github.io/post/zhe-shi-ce-shi/">
+                  <h3 class="post-title">
+                    这是测试
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
