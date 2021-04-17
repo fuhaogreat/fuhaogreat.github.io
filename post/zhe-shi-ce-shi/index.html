@@ -1,13 +1,20 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+
 <title>这是测试 | Gridea</title>
-<link rel="shortcut icon" href="https://fuhaogreat.github.io/favicon.ico?v=1618657770807">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://fuhaogreat.github.io/favicon.ico?v=1618658022794">
 <link rel="stylesheet" href="https://fuhaogreat.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="这是测试 | Gridea - Atom Feed" href="https://fuhaogreat.github.io/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
@@ -17,88 +24,87 @@ y_shanghai = [random.uniform(15, 18) for i in x]
 y_beijing = [random.uniform(1, 5) for i in x]
 1.创建..." />
     <meta name="keywords" content="" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://fuhaogreat.github.io">
-  <img class="avatar" src="https://fuhaogreat.github.io/images/avatar.png?v=1618657770807" alt="">
-  </a>
-  <h1 class="site-title">
-    Gridea
-  </h1>
-  <p class="site-description">
-    温故而知新
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://fuhaogreat.github.io">
+        <img src="https://fuhaogreat.github.io/images/avatar.png?v=1618658022794" class="site-logo">
+        <h1 class="site-title">Gridea</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="/" class="menu">
-          首页
-        </a>
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
       
-        <a href="/archives" class="menu">
-          归档
-        </a>
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
       
-        <a href="/tags" class="menu">
-          标签
-        </a>
+        
+          <a href="https://fuhaogreat.github.io/tag/XaUOnd2EE" class="site-nav">
+            学习笔记
+          </a>
+        
       
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-      
-        <a href="https://fuhaogreat.github.io/tag/XaUOnd2EE" class="menu">
-          学习笔记
-        </a>
-      
-    
+    </div>
   </div>
-  <div class="social-container">
-    
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://fuhaogreat.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
   </div>
 </div>
 
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              这是测试
-            </h2>
-            <div class="post-info">
-              <span>
-                2021-04-17
-              </span>
-              <span>
-                2 min read
-              </span>
-              
-            </div>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">这是测试</h2>
+            <div class="post-date">2021-04-17</div>
             
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <h1 id="0准备数据">0.准备数据</h1>
+            <div class="post-content" v-pre>
+              <h1 id="0准备数据">0.准备数据</h1>
 <p>x = range(60)<br>
 y_shanghai = [random.uniform(15, 18) for i in x]<br>
 y_beijing = [random.uniform(1, 5) for i in x]</p>
@@ -146,90 +152,36 @@ axes[1].legend(loc=0)</p>
 <h1 id="3图像显示">3.图像显示</h1>
 <p>plt.show()</p>
 
-              </div>
-              <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li><a href="#0%E5%87%86%E5%A4%87%E6%95%B0%E6%8D%AE">0.准备数据</a></li>
-<li><a href="#1%E5%88%9B%E5%BB%BA%E7%94%BB%E5%B8%83">1.创建画布</a></li>
-<li><a href="#pltfigurefigsize20-8-dpi100">plt.figure(figsize=(20, 8), dpi=100)</a></li>
-<li><a href="#2%E7%BB%98%E5%88%B6%E5%9B%BE%E5%83%8F">2.绘制图像</a></li>
-<li><a href="#pltplotx-y_shanghai-label%E4%B8%8A%E6%B5%B7">plt.plot(x, y_shanghai, label=&quot;上海&quot;)</a></li>
-<li><a href="#pltplotx-y_beijing-colorr-linestyle-label%E5%8C%97%E4%BA%AC">plt.plot(x, y_beijing, color=&quot;r&quot;, linestyle=&quot;--&quot;, label=&quot;北京&quot;)</a></li>
-<li><a href="#21-%E6%B7%BB%E5%8A%A0xy%E8%BD%B4%E5%88%BB%E5%BA%A6">2.1 添加x,y轴刻度</a></li>
-<li><a href="#%E6%9E%84%E9%80%A0xy%E8%BD%B4%E5%88%BB%E5%BA%A6%E6%A0%87%E7%AD%BE">构造x,y轴刻度标签</a></li>
-<li><a href="#%E5%88%BB%E5%BA%A6%E6%98%BE%E7%A4%BA">刻度显示</a></li>
-<li><a href="#pltxticksx5-x_ticks_label5">plt.xticks(x[::5], x_ticks_label[::5])</a></li>
-<li><a href="#pltyticksy_ticks5">plt.yticks(y_ticks[::5])</a></li>
-<li><a href="#22-%E6%B7%BB%E5%8A%A0%E7%BD%91%E6%A0%BC%E6%98%BE%E7%A4%BA">2.2 添加网格显示</a></li>
-<li><a href="#pltgridtrue-linestyle-alpha05">plt.grid(True, linestyle=&quot;--&quot;, alpha=0.5)</a></li>
-<li><a href="#23-%E6%B7%BB%E5%8A%A0%E6%8F%8F%E8%BF%B0%E4%BF%A1%E6%81%AF">2.3 添加描述信息</a></li>
-<li><a href="#pltxlabel%E6%97%B6%E9%97%B4">plt.xlabel(&quot;时间&quot;)</a></li>
-<li><a href="#pltylabel%E6%B8%A9%E5%BA%A6">plt.ylabel(&quot;温度&quot;)</a></li>
-<li><a href="#plttitle%E4%B8%AD%E5%8D%8811%E7%82%B9-12%E7%82%B9%E6%9F%90%E5%9F%8E%E5%B8%82%E6%B8%A9%E5%BA%A6%E5%8F%98%E5%8C%96%E5%9B%BE-fontsize20">plt.title(&quot;中午11点--12点某城市温度变化图&quot;, fontsize=20)</a></li>
-<li><a href="#24-%E5%9B%BE%E5%83%8F%E4%BF%9D%E5%AD%98"># 2.4 图像保存</a></li>
-<li><a href="#25-%E6%B7%BB%E5%8A%A0%E5%9B%BE%E4%BE%8B"># 2.5 添加图例</a></li>
-<li><a href="#pltlegendloc0">plt.legend(loc=0)</a></li>
-<li><a href="#3%E5%9B%BE%E5%83%8F%E6%98%BE%E7%A4%BA">3.图像显示</a></li>
-</ul>
-
-              </div>
             </div>
-          </article>
+            
+            
+
+            
+
+          </div>
+
         </div>
-
-        
-
-        
-
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-  <a class="rss" href="https://fuhaogreat.github.io/atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
-</div>
-
       </div>
     </div>
 
-    <script>
-      hljs.initHighlightingOnLoad()
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
 
-      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+AOS.init();
 
-      // This should probably be throttled.
-      // Especially because it triggers during smooth scrolling.
-      // https://lodash.com/docs/4.17.10#throttle
-      // You could do like...
-      // window.addEventListener("scroll", () => {
-      //    _.throttle(doThatStuff, 100);
-      // });
-      // Only not doing it here to keep this Pen dependency-free.
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
-      window.addEventListener("scroll", event => {
-        let fromTop = window.scrollY;
+</script>
 
-        mainNavLinks.forEach((link, index) => {
-          let section = document.getElementById(decodeURI(link.hash).substring(1));
-          let nextSection = null
-          if (mainNavLinks[index + 1]) {
-            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-          }
-          if (section.offsetTop <= fromTop) {
-            if (nextSection) {
-              if (nextSection.offsetTop > fromTop) {
-                link.classList.add("current");
-              } else {
-                link.classList.remove("current");    
-              }
-            } else {
-              link.classList.add("current");
-            }
-          } else {
-            link.classList.remove("current");
-          }
-        });
-      });
 
-    </script>
+
+
+
+
   </body>
 </html>
