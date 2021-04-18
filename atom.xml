@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://fuhaogreat.github.io</id>
     <title>Gridea</title>
-    <updated>2021-04-18T07:24:04.276Z</updated>
+    <updated>2021-04-18T07:24:29.286Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://fuhaogreat.github.io"/>
     <link rel="self" href="https://fuhaogreat.github.io/atom.xml"/>
@@ -537,61 +537,6 @@ array([  1.,  10., 100.])
 <li>逆矩阵</li>
 <li>矩阵计算函数</li>
 </ol>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[这是测试]]></title>
-        <id>https://fuhaogreat.github.io/post/zhe-shi-ce-shi/</id>
-        <link href="https://fuhaogreat.github.io/post/zhe-shi-ce-shi/">
-        </link>
-        <updated>2021-04-17T10:32:49.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="0准备数据">0.准备数据</h1>
-<p>x = range(60)<br>
-y_shanghai = [random.uniform(15, 18) for i in x]<br>
-y_beijing = [random.uniform(1, 5) for i in x]</p>
-<h1 id="1创建画布">1.创建画布</h1>
-<h1 id="pltfigurefigsize20-8-dpi100">plt.figure(figsize=(20, 8), dpi=100)</h1>
-<p>fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(20, 8), dpi=100)</p>
-<h1 id="2绘制图像">2.绘制图像</h1>
-<h1 id="pltplotx-y_shanghai-label上海">plt.plot(x, y_shanghai, label=&quot;上海&quot;)</h1>
-<h1 id="pltplotx-y_beijing-colorr-linestyle-label北京">plt.plot(x, y_beijing, color=&quot;r&quot;, linestyle=&quot;--&quot;, label=&quot;北京&quot;)</h1>
-<p>axes[0].plot(x, y_shanghai, label=&quot;上海&quot;)<br>
-axes[1].plot(x, y_beijing, color=&quot;r&quot;, linestyle=&quot;--&quot;, label=&quot;北京&quot;)</p>
-<h1 id="21-添加xy轴刻度">2.1 添加x,y轴刻度</h1>
-<h1 id="构造xy轴刻度标签">构造x,y轴刻度标签</h1>
-<p>x_ticks_label = [&quot;11点{}分&quot;.format(i) for i in x]<br>
-y_ticks = range(40)</p>
-<h1 id="刻度显示">刻度显示</h1>
-<h1 id="pltxticksx5-x_ticks_label5">plt.xticks(x[::5], x_ticks_label[::5])</h1>
-<h1 id="pltyticksy_ticks5">plt.yticks(y_ticks[::5])</h1>
-<p>axes[0].set_xticks(x[::5])<br>
-axes[0].set_yticks(y_ticks[::5])<br>
-axes[0].set_xticklabels(x_ticks_label[::5])<br>
-axes[1].set_xticks(x[::5])<br>
-axes[1].set_yticks(y_ticks[::5])<br>
-axes[1].set_xticklabels(x_ticks_label[::5])</p>
-<h1 id="22-添加网格显示">2.2 添加网格显示</h1>
-<h1 id="pltgridtrue-linestyle-alpha05">plt.grid(True, linestyle=&quot;--&quot;, alpha=0.5)</h1>
-<p>axes[0].grid(True, linestyle=&quot;--&quot;, alpha=0.5)<br>
-axes[1].grid(True, linestyle=&quot;--&quot;, alpha=0.5)</p>
-<h1 id="23-添加描述信息">2.3 添加描述信息</h1>
-<h1 id="pltxlabel时间">plt.xlabel(&quot;时间&quot;)</h1>
-<h1 id="pltylabel温度">plt.ylabel(&quot;温度&quot;)</h1>
-<h1 id="plttitle中午11点-12点某城市温度变化图-fontsize20">plt.title(&quot;中午11点--12点某城市温度变化图&quot;, fontsize=20)</h1>
-<p>axes[0].set_xlabel(&quot;时间&quot;)<br>
-axes[0].set_ylabel(&quot;温度&quot;)<br>
-axes[0].set_title(&quot;中午11点--12点某城市温度变化图&quot;, fontsize=20)<br>
-axes[1].set_xlabel(&quot;时间&quot;)<br>
-axes[1].set_ylabel(&quot;温度&quot;)<br>
-axes[1].set_title(&quot;中午11点--12点某城市温度变化图&quot;, fontsize=20)</p>
-<h1 id="24-图像保存"># 2.4 图像保存</h1>
-<p>plt.savefig(&quot;./test.png&quot;)</p>
-<h1 id="25-添加图例"># 2.5 添加图例</h1>
-<h1 id="pltlegendloc0">plt.legend(loc=0)</h1>
-<p>axes[0].legend(loc=0)<br>
-axes[1].legend(loc=0)</p>
-<h1 id="3图像显示">3.图像显示</h1>
-<p>plt.show()</p>
 ]]></content>
     </entry>
 </feed>
